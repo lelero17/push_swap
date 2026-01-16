@@ -3,7 +3,8 @@ NAME = push_swap
 SRCS = main.c \
        stack_utils.c \
        input_val.c \
-	   utils.c
+	   input_parsing.c \
+	   utils.c \
 
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
