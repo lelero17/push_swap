@@ -6,6 +6,7 @@ SRCS = main.c \
 	   input_parsing.c \
 	   operation_swap.c \
 	   operation_push.c \
+	   operation_rotate.c \
 	   utils.c \
 
 CC = cc
