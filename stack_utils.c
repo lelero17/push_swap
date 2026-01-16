@@ -6,7 +6,7 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/15 10:21:15 by lemmerli          #+#    #+#             */
-/*   Updated: 2026/01/15 15:31:38 by lemmerli         ###   ########.fr       */
+/*   Updated: 2026/01/16 12:28:54 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void	stack_add_back(t_stack **stack, t_stack *new)
 	if (*stack == NULL)
 	{
 		*stack = new;
-		return;
+		return ;
 	}
 	tmp = *stack;
 	while (tmp->next != NULL)
@@ -43,7 +43,7 @@ void	stack_free(t_stack **stack)
 {
 	t_stack	*tmp;
 
-	while(*stack != NULL)
+	while (*stack != NULL)
 	{
 		tmp = *stack;
 		*stack = (*stack)->next;

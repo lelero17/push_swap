@@ -6,7 +6,7 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/15 11:05:10 by lemmerli          #+#    #+#             */
-/*   Updated: 2026/01/16 11:16:46 by lemmerli         ###   ########.fr       */
+/*   Updated: 2026/01/16 12:38:33 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ long long	ft_atoi(char *str)
 	sign = 1;
 	if (str[i] == '-' || str[i] == '+')
 	{
-		if(str[i] == '-')
+		if (str[i] == '-')
 			sign = -1;
 		i++;
 	}

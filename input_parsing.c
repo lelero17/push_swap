@@ -6,7 +6,7 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 10:53:28 by lemmerli          #+#    #+#             */
-/*   Updated: 2026/01/16 10:53:57 by lemmerli         ###   ########.fr       */
+/*   Updated: 2026/01/16 12:38:16 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,11 @@ t_stack	*parse_input(int argc, char **argv)
 
 	stack = NULL;
 	i = 1;
-	while(i < argc)
+	while (i < argc)
 	{
 		num = ft_atoi(argv[i]);
 		stack_add_back(&stack, stack_new(num));
 		i++;
 	}
-	return(stack);
+	return (stack);
 }
