@@ -6,7 +6,7 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 12:51:07 by lemmerli          #+#    #+#             */
-/*   Updated: 2026/01/16 13:42:56 by lemmerli         ###   ########.fr       */
+/*   Updated: 2026/01/16 15:11:06 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 static void	swap(t_stack **stack)
 {
-	t_stack *first;
-	t_stack *second;
+	t_stack	*first;
+	t_stack	*second;
 
 	if (!*stack || !(*stack)->next)
 		return ;
