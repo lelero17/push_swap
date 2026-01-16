@@ -4,6 +4,7 @@ SRCS = main.c \
        stack_utils.c \
        input_val.c \
 	   input_parsing.c \
+	   operation_swap.c \
 	   utils.c \
 
 CC = cc

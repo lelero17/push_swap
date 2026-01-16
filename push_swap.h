@@ -6,7 +6,7 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/15 10:06:36 by lemmerli          #+#    #+#             */
-/*   Updated: 2026/01/16 12:41:32 by lemmerli         ###   ########.fr       */
+/*   Updated: 2026/01/16 13:46:38 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,11 @@ int			is_number(char *str);
 int			is_int_range(char *str);
 int			check_dup(int argc, char **argv);
 int			validate_input(int argc, char **argv);
+
+// Operation Swap
+void		sa(t_stack **stack_a);
+void		sb(t_stack **stack_b);
+void		ss(t_stack **stack_a, t_stack **stack_b);
 
 // Utils
 long long	ft_atoi(char *str);
