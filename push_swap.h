@@ -6,7 +6,7 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/15 10:06:36 by lemmerli          #+#    #+#             */
-/*   Updated: 2026/01/16 13:46:38 by lemmerli         ###   ########.fr       */
+/*   Updated: 2026/01/16 15:25:14 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,10 @@ int			validate_input(int argc, char **argv);
 void		sa(t_stack **stack_a);
 void		sb(t_stack **stack_b);
 void		ss(t_stack **stack_a, t_stack **stack_b);
+
+// Operation Push
+void		pa(t_stack **stack_a, t_stack **stack_b);
+void		pb(t_stack **stack_a, t_stack **stack_b);
 
 // Utils
 long long	ft_atoi(char *str);
