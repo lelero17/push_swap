@@ -6,7 +6,7 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/15 10:06:36 by lemmerli          #+#    #+#             */
-/*   Updated: 2026/01/16 20:28:26 by lemmerli         ###   ########.fr       */
+/*   Updated: 2026/01/17 15:22:04 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,12 @@ void		rr(t_stack **stack_a, t_stack **stack_b);
 void		rra(t_stack **stack_a);
 void		rrb(t_stack **stack_b);
 void		rrr(t_stack **stack_a, t_stack **stack_b);
+
+// Stack helper
+int			stack_min(t_stack *stack);
+int 		stack_max(t_stack *stack);
+int			stack_size(t_stack *stack);
+int 		stack_sorted(t_stack *stack);
 
 // Utils
 long long	ft_atoi(char *str);

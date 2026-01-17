@@ -8,6 +8,7 @@ SRCS = main.c \
 	   operation_push.c \
 	   operation_rotate.c \
 	   operation_reverse.c \
+	   stack_helpers.c \
 	   utils.c \
 
 CC = cc
