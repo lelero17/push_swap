@@ -6,7 +6,7 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/15 10:06:36 by lemmerli          #+#    #+#             */
-/*   Updated: 2026/01/17 16:24:16 by lemmerli         ###   ########.fr       */
+/*   Updated: 2026/01/17 16:27:29 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,14 +59,14 @@ void		rrr(t_stack **stack_a, t_stack **stack_b);
 
 // Stack helper
 int			stack_min(t_stack *stack);
-int 		stack_max(t_stack *stack);
+int			stack_max(t_stack *stack);
 int			stack_size(t_stack *stack);
-int 		stack_sorted(t_stack *stack);
+int			stack_sorted(t_stack *stack);
 
 // Sort small
 void		sort_two(t_stack **stack_a);
-void 		sort_three(t_stack **stack_a);
-void		sort_five(t_stack **stack_a, t_stack **stack_b):
+void		sort_three(t_stack **stack_a);
+void		sort_five(t_stack **stack_a, t_stack **stack_b);
 
 // Utils
 long long	ft_atoi(char *str);

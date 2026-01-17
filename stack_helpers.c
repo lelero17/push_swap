@@ -6,7 +6,7 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/17 14:31:50 by lemmerli          #+#    #+#             */
-/*   Updated: 2026/01/17 15:19:25 by lemmerli         ###   ########.fr       */
+/*   Updated: 2026/01/17 16:28:15 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,10 @@ int	stack_min(t_stack *stack)
 	return (min);
 }
 
-int stack_max(t_stack *stack)
+int	stack_max(t_stack *stack)
 {
-	int 	max;
-	t_stack *tmp;
+	int		max;
+	t_stack	*tmp;
 
 	if (!stack)
 		return (0);
@@ -52,7 +52,7 @@ int	stack_size(t_stack *stack)
 {
 	int		counter;
 	t_stack	*tmp;
-	
+
 	if (!stack)
 		return (0);
 	counter = 0;
@@ -65,7 +65,7 @@ int	stack_size(t_stack *stack)
 	return (counter);
 }
 
-int stack_sorted(t_stack *stack)
+int	stack_sorted(t_stack *stack)
 {
 	t_stack	*tmp;
 
