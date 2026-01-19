@@ -6,32 +6,37 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/15 10:03:01 by lemmerli          #+#    #+#             */
-/*   Updated: 2026/01/16 12:34:54 by lemmerli         ###   ########.fr       */
+/*   Updated: 2026/01/19 14:42:38 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 #include <stdio.h>
 
-void	print_stack(t_stack *stack)
-{
-	while (stack)
-	{
-		printf("%d -> ", stack->value);
-		stack = stack->next;
-	}
-	printf("NULL\n");
-}
-
 int	main(int argc, char **argv)
 {
 	t_stack	*stack_a;
+	t_stack	*stack_b;
+	int		size;
 
 	if (argc < 2)
 		return (0);
 	validate_input(argc, argv);
 	stack_a = parse_input(argc, argv);
-	print_stack(stack_a);
+	stack_b = NULL;
+	size = stack_size(stack_a);
+	if (stack_sorted(stack_a) || size < 2)
+	{
+		stack_free(&stack_a);
+		return (0);
+	}
+	if (size == 2)
+		sort_two(&stack_a);
+	else if (size == 3)
+		sort_three(&stack_a);
+	else if (size <= 5)
+		sort_five(&stack_a, &stack_b);
 	stack_free(&stack_a);
+	stack_free(&stack_b);
 	return (0);
 }
