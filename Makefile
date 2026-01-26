@@ -10,6 +10,7 @@ SRCS = main.c \
 	   operation_reverse.c \
 	   stack_helpers.c \
 	   sort_small.c \
+	   sort_large.c \
 	   utils.c \
 
 CC = cc

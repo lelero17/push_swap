@@ -6,7 +6,7 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/15 10:21:15 by lemmerli          #+#    #+#             */
-/*   Updated: 2026/01/16 12:28:54 by lemmerli         ###   ########.fr       */
+/*   Updated: 2026/01/26 16:41:03 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ t_stack	*stack_new(int value)
 	if (!new)
 		return (NULL);
 	new->value = value;
+	new->index = 0;
 	new->next = NULL;
 	return (new);
 }
