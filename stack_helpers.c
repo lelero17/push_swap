@@ -6,7 +6,7 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/17 14:31:50 by lemmerli          #+#    #+#             */
-/*   Updated: 2026/01/17 16:28:15 by lemmerli         ###   ########.fr       */
+/*   Updated: 2026/01/30 12:58:29 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,4 +79,23 @@ int	stack_sorted(t_stack *stack)
 		tmp = tmp->next;
 	}
 	return (1);
+}
+
+int	find_position(t_stack *stack, int value)
+{
+	int		pos;
+	t_stack	*tmp;
+
+	if (!stack)
+		return(0);
+	tmp = stack;
+	pos = 0;
+	while (tmp)
+	{
+		if (tmp->value == value)
+			return (pos);
+		pos++;
+		tmp = tmp->next;
+	}
+	return (-1);
 }

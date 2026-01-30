@@ -6,7 +6,7 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/15 10:06:36 by lemmerli          #+#    #+#             */
-/*   Updated: 2026/01/30 11:12:18 by lemmerli         ###   ########.fr       */
+/*   Updated: 2026/01/30 12:59:47 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,6 +63,7 @@ int			stack_min(t_stack *stack);
 int			stack_max(t_stack *stack);
 int			stack_size(t_stack *stack);
 int			stack_sorted(t_stack *stack);
+int			find_position(t_stack *stack, int value);
 
 // Sort small
 void		sort_two(t_stack **stack_a);
