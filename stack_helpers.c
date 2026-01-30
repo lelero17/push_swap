@@ -6,7 +6,7 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/17 14:31:50 by lemmerli          #+#    #+#             */
-/*   Updated: 2026/01/30 12:58:29 by lemmerli         ###   ########.fr       */
+/*   Updated: 2026/01/30 17:56:13 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,7 +87,7 @@ int	find_position(t_stack *stack, int value)
 	t_stack	*tmp;
 
 	if (!stack)
-		return(0);
+		return (0);
 	tmp = stack;
 	pos = 0;
 	while (tmp)
