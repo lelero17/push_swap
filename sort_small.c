@@ -6,28 +6,27 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/17 14:09:50 by lemmerli          #+#    #+#             */
-/*   Updated: 2026/01/30 13:11:53 by lemmerli         ###   ########.fr       */
+/*   Updated: 2026/01/30 17:36:04 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-static void	rotate_to_top(t_stack **stack, int value)
+void	rotate_to_top(t_stack **stack, int value)
 {
 	int	pos;
-	int size;
+	int	size;
 
 	pos = find_position(*stack, value);
 	size = stack_size(*stack);
-
 	if (pos <= size / 2)
 	{
-		while((*stack)->value != value)
+		while ((*stack)->value != value)
 			ra(stack);
 	}
 	else
 	{
-		while((*stack)->value != value)
+		while ((*stack)->value != value)
 			rra(stack);
 	}
 }
