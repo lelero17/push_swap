@@ -6,7 +6,7 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/15 10:06:36 by lemmerli          #+#    #+#             */
-/*   Updated: 2026/01/30 12:59:47 by lemmerli         ###   ########.fr       */
+/*   Updated: 2026/01/30 17:35:17 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,6 +66,7 @@ int			stack_sorted(t_stack *stack);
 int			find_position(t_stack *stack, int value);
 
 // Sort small
+void		rotate_to_top(t_stack **stack, int value);
 void		sort_two(t_stack **stack_a);
 void		sort_three(t_stack **stack_a);
 void		sort_five(t_stack **stack_a, t_stack **stack_b);
@@ -75,6 +76,17 @@ void		assign_index(t_stack *stack);
 int			get_max_bits(t_stack *stack);
 int			get_bit(int num, int bit_pos);
 void		radix_sort(t_stack **stack_a, t_stack **stack_b);
+
+// Chunk utils
+int			get_chunk_size(int size);
+int			find_max_index(t_stack *stack_b);
+
+// Chunk search
+int			find_next_in_chunk(t_stack *stack, int min_idx, int max_idx);
+
+// Sort chunk
+void		push_chunk(t_stack **a, t_stack **b, int min_idx, int max_idx);
+void		chunk_sort(t_stack **stack_a, t_stack **stack_b);
 
 // Utils
 long long	ft_atoi(char *str);

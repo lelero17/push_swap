@@ -11,6 +11,9 @@ SRCS = main.c \
 	   stack_helpers.c \
 	   sort_small.c \
 	   sort_large.c \
+	   sort_chunk.c \
+	   chunk_search.c \
+	   chunk_utils.c \
 	   utils.c \
 
 CC = cc

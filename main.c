@@ -6,7 +6,7 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/15 10:03:01 by lemmerli          #+#    #+#             */
-/*   Updated: 2026/01/30 12:01:26 by lemmerli         ###   ########.fr       */
+/*   Updated: 2026/01/30 17:37:16 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ static void	choose_sort(t_stack **stack_a, t_stack **stack_b, int size)
 		sort_three(stack_a);
 	else if (size <= 5)
 		sort_five(stack_a, stack_b);
+	else if (size <= 100)
+		chunk_sort(stack_a, stack_b);
 	else
 		radix_sort(stack_a, stack_b);
 }
