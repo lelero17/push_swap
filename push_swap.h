@@ -6,7 +6,7 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/15 10:06:36 by lemmerli          #+#    #+#             */
-/*   Updated: 2026/01/26 17:16:56 by lemmerli         ###   ########.fr       */
+/*   Updated: 2026/01/30 11:12:18 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,6 +72,8 @@ void		sort_five(t_stack **stack_a, t_stack **stack_b);
 // Sort large
 void		assign_index(t_stack *stack);
 int			get_max_bits(t_stack *stack);
+int			get_bit(int num, int bit_pos);
+void		radix_sort(t_stack **stack_a, t_stack **stack_b);
 
 // Utils
 long long	ft_atoi(char *str);

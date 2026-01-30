@@ -6,7 +6,7 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/26 16:14:56 by lemmerli          #+#    #+#             */
-/*   Updated: 2026/01/26 17:29:55 by lemmerli         ###   ########.fr       */
+/*   Updated: 2026/01/30 11:36:11 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	assign_index(t_stack *stack)
 {
 	t_stack	*current;
-	t_stack *compare;
+	t_stack	*compare;
 	int		index;
 
 	current = stack;
@@ -32,6 +32,7 @@ void	assign_index(t_stack *stack)
 		current->index = index;
 		current = current->next;
 	}
+	return ;
 }
 
 int	get_max_bits(t_stack *stack)
@@ -60,4 +61,42 @@ int	get_max_bits(t_stack *stack)
 int	get_bit(int num, int bit_pos)
 {
 	return ((num >> bit_pos) & 1);
+}
+
+static void	radix_bit(t_stack **stack_a, t_stack **stack_b, int bit, int size)
+{
+	int	i;
+	int	current_bit;
+
+	i = 0;
+	while (i < size)
+	{
+		current_bit = get_bit((*stack_a)->index, bit);
+		if (current_bit == 0)
+			pb(stack_a, stack_b);
+		else
+			ra(stack_a);
+		i++;
+	}
+	return ;
+}
+
+void	radix_sort(t_stack **stack_a, t_stack **stack_b)
+{
+	int	max_bits;
+	int	size;
+	int	bit;
+
+	assign_index(*stack_a);
+	max_bits = get_max_bits(*stack_a);
+	size = stack_size(*stack_a);
+	bit = 0;
+	while (bit < max_bits)
+	{
+		radix_bit(stack_a, stack_b, bit, size);
+		while (*stack_b)
+			pa(stack_a, stack_b);
+		bit++;
+	}
+	return ;
 }
