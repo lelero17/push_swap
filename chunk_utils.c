@@ -6,7 +6,7 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/30 16:27:23 by lemmerli          #+#    #+#             */
-/*   Updated: 2026/01/30 17:45:32 by lemmerli         ###   ########.fr       */
+/*   Updated: 2026/02/08 12:31:33 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	get_chunk_size(int size)
 	else if (size <= 50)
 		return (8);
 	else if (size <= 100)
-		return (15);
+		return (18);
 	return (20);
 }
 
