@@ -6,12 +6,11 @@
 /*   By: lemmerli <lemmerli@student.42heilbronn.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/15 10:03:01 by lemmerli          #+#    #+#             */
-/*   Updated: 2026/01/30 17:37:16 by lemmerli         ###   ########.fr       */
+/*   Updated: 2026/02/09 15:47:04 by lemmerli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-#include <stdio.h>
 
 static void	choose_sort(t_stack **stack_a, t_stack **stack_b, int size)
 {
